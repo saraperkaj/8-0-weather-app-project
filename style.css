@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(216, 230, 235);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+form {
+  color: rgb(rgb(146, 63, 63), rgb(86, 184, 86), rgb(106, 106, 160));
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  background-color: lightblue;
+  border-style: groove;
+  grid-column: 1 / span 3;
+  padding-bottom: 35px;
+}
+
+form label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: small;
+  color: rgb(141, 172, 105);
+}
+
+form input {
+  color: rosybrown;
+}
+
+header {
+  display: grid;
+}
+
+.display {
+  padding: 50px;
+  border-style: dashed;
+  border-color: beige;
+  text-align: center;
+  background-color: rgb(156, 203, 203);
+  grid-column: span 2;
+}
+
+.history {
+  padding: 50px;
+  border-style: double;
+  border-color: cadetblue;
+  text-align: center;
+  background-color: rgb(153, 196, 198);
+  grid-column: span 1;
+}

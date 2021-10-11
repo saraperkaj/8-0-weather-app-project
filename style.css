@@ -46,3 +46,12 @@ header {
   background-color: rgb(153, 196, 198);
   grid-column: span 1;
 }
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.display-li {
+  text-align: center;
+  list-style: none;
+}

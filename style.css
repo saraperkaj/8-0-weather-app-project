@@ -1,7 +1,13 @@
 body {
   background-color: rgb(216, 230, 235);
+}
+
+#page {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "head head"
+    "main side"
+    "extra side";
 }
 
 form {
@@ -11,7 +17,7 @@ form {
   font-size: 30px;
   background-color: lightblue;
   border-style: groove;
-  grid-column: 1 / span 3;
+
   padding-bottom: 35px;
 }
 
@@ -26,25 +32,32 @@ form input {
 }
 
 header {
-  display: grid;
+  grid-area: head;
 }
 
-.display {
+main {
+  grid-area: main;
   padding: 50px;
   border-style: dashed;
   border-color: beige;
   text-align: center;
   background-color: rgb(156, 203, 203);
-  grid-column: span 2;
+}
+
+.display-div {
+  grid-area: extra;
+  visibility: hidden;
+  border: 1px solid honeydew;
+  background-color: rgb(106, 106, 160);
 }
 
 .history {
+  grid-area: side;
   padding: 50px;
   border-style: double;
   border-color: cadetblue;
   text-align: center;
   background-color: rgb(153, 196, 198);
-  grid-column: span 1;
 }
 
 ul {

@@ -9,20 +9,29 @@
     <script defer src="./main.js"></script>
   </head>
   <body>
-    <form id="Search_Form" class="header">
-      <h1>Weather App</h1>
-      <label for="Search"> Pick A Location </label>
-      <input
-        type="text"
-        id="Search"
-        name="search"
-        placeholder="Type to search.."
-      />
-      <input type="submit" value="Submit" />
-    </form>
-    <main class="display">Your Search:</main>
-    <sidebar class="history">
-      <section>Previous Searches:</section>
-    </sidebar>
+    <div id="page">
+      <header>
+        <form id="Search_Form">
+          <h1>Weather App</h1>
+          <label for="Search"> Pick A Location </label>
+          <input
+            type="text"
+            id="Search"
+            name="search"
+            placeholder="Type to search.."
+          />
+          <input type="submit" value="Submit" />
+        </form>
+      </header>
+      <main class="display">Your Search:</main>
+      <sidebar class="history">
+        <section>Previous Searches:</section>
+      </sidebar>
+      <div class="display display-div">
+        <section id="today">Today:</section>
+        <section id="tomorrow">Tomorrow:</section>
+        <section id="dayafter">Day After:</section>
+      </div>
+    </div>
   </body>
 </html>

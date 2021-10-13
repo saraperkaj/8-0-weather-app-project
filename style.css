@@ -7,7 +7,13 @@ body {
   grid-template-areas:
     "head head"
     "main side"
-    "extra side";
+    "extra side"
+    "foot foot";
+}
+
+footer {
+  text-align: center;
+  grid-area: "foot";
 }
 
 form {
@@ -48,7 +54,7 @@ main {
   grid-area: extra;
   visibility: hidden;
   border: 1px solid honeydew;
-  background-color: rgb(106, 106, 160);
+  background-color: rgb(rgb(146, 63, 63), rgb(86, 184, 86), rgb(106, 106, 160));
 }
 
 .history {

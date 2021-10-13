@@ -14,7 +14,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
       display.innerHTML = `
       
-      <h2>${area}</h2> </li>
+      <h2>${area}</h2>
       <ul>
       <li class="display-li"><strong>Area:</strong> ${area} </li>
       <li class="display-li"><strong>Region:</strong> ${region} </li>
@@ -51,7 +51,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
         </div>
         <div class="weather-after-tomorrow">
         <div>
-        <h3>Day After Tomorrow</h3>
+          <h3>Day After Tomorrow</h3>
         </div>
         <div>Average Tempretaure: ${object.weather[2].avgtempF} °F</div>
         <div>Max Temperature: ${object.weather[2].avgtempF} °F</div>
@@ -60,10 +60,17 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
       //side bar searches name and feels like temp
 
-      let side = document.querySelector(".history");
-      side.innerHTML += `
-      <div>${area} - ${feelsLike}°F</div>
-      `;
+      let side = document.querySelector(".fill");
+      const grill = (side.innerHTML += `
+    <div class="history-of-input">${area} - ${feelsLike}°F</div>
+    `);
+      const frog = document.querySelector(".history-of-input");
+      if (grill !== frog) {
+        grill;
+      }
+      console.log(side, "side");
+      console.log(frog, "frog");
+      console.log(grill, "grill");
     })
     .catch(console.log);
   event.target.reset();
